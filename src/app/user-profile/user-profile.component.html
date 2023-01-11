@@ -1,0 +1,9 @@
+<div>
+    <img [src]='user.photo' />
+    <input type="text" [(ngModel)]="user.quote">
+    <p>{{user.quote}}</p>
+    <p [hidden]= "user.bool">Age: {{ user.age }}</p>
+    <p>Name: {{ user.name }}</p>
+    <p>FirstName: {{ user.firstName }}</p>
+    <button (click)="hide()" >afficher / masquer l'age</button>
+</div>
